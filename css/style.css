@@ -117,7 +117,6 @@ h3 {
 .recent-posts {
   background-color: #edf7fa;
   padding: 27px 0px 32px;
-  margin: 50px auto;
 }
 
 .recent-posts__top {
@@ -125,9 +124,6 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
-}
-
-.recent-posts__title {
 }
 
 .recent-posts__link {
@@ -151,8 +147,8 @@ h3 {
   margin-right: 0;
 }
 
-.recent-posts__info  {
-  border-right: 1px solid #000000;
+.recent-posts__info {
+  margin-right: 1px solid #000000;
 }
 
 .recent-posts__separater {
@@ -161,5 +157,24 @@ h3 {
 }
 
 .recent-posts__subtitle {
-  font-size: 32%;
+  font-size: 32px;
+}
+
+.featured {
+  padding-top: 32px;
+}
+
+.work__img-wrap {
+  flex-shrink: 0;
+  overflow: hidden;
+  min-height: 180px;
+  min-width: 246px;
+}
+
+.work__img {
+  object-fit: cover;
+}
+
+.work__top {
+  text-align: right;
 }
