@@ -71,11 +71,48 @@ h3 {
   font-size: 20px;
 }
 
-.title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 60px;
+.header__burger {
+  width: 30px;
+  height: 20px;
+  display: none;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.header__burger-el {
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: relative;
+}
+
+.header__burger-el::before,
+.header__burger-el::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: absolute;
+}
+
+.header__burger-el::before {
+  top: -9px;
+}
+
+.header__burger-el::after {
+  bottom: -9px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-top: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
 }
 
 .about__container {
@@ -164,17 +201,81 @@ h3 {
   padding-top: 32px;
 }
 
+.work {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 30px;
+}
+
 .work__img-wrap {
   flex-shrink: 0;
   overflow: hidden;
-  min-height: 180px;
-  min-width: 246px;
+  max-height: 180px;
+  max-width: 246px;
+  border-radius: 6px;
 }
 
 .work__img {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .work__top {
-  text-align: right;
+  margin-left: 20px;
+}
+
+.work__date {
+  margin-right: 26px;
+  background-color: #000000d7;
+  border-radius: 31px;
+  color: white;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  height: 50px;
+  width: 30px;
+  margin-right: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social__link {
+  display: block;
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.social_fb {
+  background-image: url(../img/fb.png);
+}
+
+.social_insta {
+  background-image: url(../img/insta.png);
+}
+
+.social_twitter {
+  background-image: url(../img/Vector.png);
+}
+
+.social_in {
+  background-image: url(../img/Linkedin.png);
+}
+
+.social__title {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #21243d;
 }
