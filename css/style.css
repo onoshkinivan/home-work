@@ -188,13 +188,20 @@ h3 {
   margin-right: 1px solid #000000;
 }
 
+.recent-posts__subtitle {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-posts__info {
+  margin: 17px;
+}
+
 .recent-posts__separater {
   margin-right: 26px;
   margin-left: 26px;
-}
-
-.recent-posts__subtitle {
-  font-size: 32px;
+  margin: 17px;
 }
 
 .featured {
@@ -225,11 +232,28 @@ h3 {
   margin-left: 20px;
 }
 
+.work__info {
+  font-weight: bold;
+  font-size: 30px;
+  color: #21243D;
+}
+
+.subtitle {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .work__date {
   margin-right: 26px;
   background-color: #000000d7;
   border-radius: 31px;
   color: white;
+}
+
+.work__category {
+  color: #8695A4;
+
 }
 
 .footer {
@@ -255,6 +279,8 @@ h3 {
   font-size: 0;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .social_fb {
@@ -267,6 +293,7 @@ h3 {
 
 .social_twitter {
   background-image: url(../img/Vector.png);
+
 }
 
 .social_in {
