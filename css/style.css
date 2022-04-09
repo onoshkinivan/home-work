@@ -355,6 +355,10 @@ h3 {
   align-items: center;
 }
 
+.blog__title {
+  margin-bottom: 30px;
+}
+
 .blog__articles {
   display: flex;
 }
@@ -375,6 +379,11 @@ h3 {
 
 .blog__info {
   margin-right: 1px solid #000000;
+  margin: 10px 0px;
+}
+
+.blog__text {
+  margin-bottom: 15px;
 }
 
 .blog__separater {
